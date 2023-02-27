@@ -5,9 +5,9 @@ import { Header, SearchForm, Button, Input } from './Search.styled';
 export const Search = () => {
   const [setSearchParams] = useSearchParams();
 
-  const onSubmit = e => {
-    e.preventDefault();
-    const query = e.target.query.value.toLocaleLowerCase().trim();
+  const onSubmit = event => {
+    event.preventDefault();
+    const query = event.target.query.value.toLocaleLowerCase().trim();
     if (!query) return;
     setSearchParams({ query });
   };
