@@ -2,17 +2,14 @@ import { FiSearch } from 'react-icons/fi';
 import { useSearchParams } from 'react-router-dom';
 import { Header, SearchForm, Button, Input } from './Search.styled';
 
-
-
-
 export const Search = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [setSearchParams] = useSearchParams();
 
   const onSubmit = e => {
     e.preventDefault();
     const query = e.target.query.value.toLocaleLowerCase().trim();
     if (!query) return;
-    setSearchParams({query});
+    setSearchParams({ query });
   };
   return (
     <Header>
