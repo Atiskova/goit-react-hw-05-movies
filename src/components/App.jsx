@@ -10,12 +10,6 @@ const MovieDetail = lazy(() => import('../views/MovieDetail'));
 const Cast = lazy(() => import('./Cast/Cast'));
 const Reviews = lazy(() => import('./Reviews/Reviews'));
 
-// import { Home } from 'views/Home';
-// import { Movies } from 'views/Movies';
-// import { MovieDetail } from 'views/MovieDetail';
-// import { Cast } from './Cast/Cast';
-// import { Reviews } from './Reviews/Reviews';
-
 export const App = () => {
   return (
     <Suspense fallback={<Loader />}>
