@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Loader } from 'components/Loader/Loader';
 import { getCast } from 'service/api';
 
