@@ -48,7 +48,7 @@ const MovieDetail = () => {
       <BackButton path={backPath} />
       {loading && <Loader />}
       <Section>
-        <MovieInfo {...movie} />
+        {movie && <MovieInfo {...movie} />}
       </Section>
       <Container>
         <Title>Additional information</Title>
